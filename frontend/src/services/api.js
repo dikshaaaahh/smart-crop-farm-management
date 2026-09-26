@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://smart-crop-farm-backend.vercel.app/api';
 
 async function fetchJson(endpoint, options = {}) {
   const url = `${API_BASE_URL}${endpoint}`;

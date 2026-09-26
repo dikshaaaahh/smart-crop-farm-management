@@ -67,7 +67,7 @@ export default function Navbar({ activeTab, setActiveTab, backendOnline, onOpenE
 
           <div
             className={`nav-status-badge ${backendOnline ? '' : 'offline'}`}
-            title={backendOnline ? 'Spring Boot REST API connected' : 'Cannot reach backend at localhost:8080'}
+            title={backendOnline ? 'Spring Boot REST API connected' : 'Cannot reach backend'}
           >
             <span className="nav-status-dot"></span>
             <span>{backendOnline ? 'Backend Online' : 'Connecting...'}</span>
