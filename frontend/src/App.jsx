@@ -10,7 +10,7 @@ import FertilizerGuidance from './pages/FertilizerGuidance';
 import IrrigationGuidance from './pages/IrrigationGuidance';
 import ActivityTracker from './pages/ActivityTracker';
 import ExpenseManager from './pages/ExpenseManager';
-
+import LabourDiary from './pages/LabourDiary';
 import { api } from './services/api';
 
 export default function App() {
@@ -99,7 +99,10 @@ export default function App() {
 
         {activeTab === 'expenses' && (
           <ExpenseManager showToast={showToast} />
-        )}
+        )} 
+        {activeTab === 'labour' && (
+  <LabourDiary />
+)}
       </main>
 
       <RuleExplainerModal

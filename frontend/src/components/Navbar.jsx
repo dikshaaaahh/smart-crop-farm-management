@@ -7,7 +7,8 @@ import {
   FlaskConical,
   Droplets,
   CalendarCheck2,
-  WalletCards,
+    WalletCards,
+  HardHat,
   HelpCircle,
 } from 'lucide-react';
 
@@ -20,6 +21,7 @@ export default function Navbar({ activeTab, setActiveTab, backendOnline, onOpenE
     { id: 'irrigation', label: 'Water & Irrigation', icon: Droplets },
     { id: 'activities', label: 'Activities', icon: CalendarCheck2 },
     { id: 'expenses', label: 'Expenses', icon: WalletCards },
+    { id: 'labour', label: 'Labour Diary', icon: HardHat },
   ];
 
   return (
